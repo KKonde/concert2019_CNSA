@@ -1,0 +1,61 @@
+.seat_num1{
+    margin-right: 14.1px;
+    margin-left: 14.1px; 
+    float: left;
+}
+
+.seat_num2{
+    margin-right: 9.7px;
+    margin-left: 9.7px; 
+    float: left;
+}
+
+.seat_eng{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;    
+}
+
+.seat_num1_s{
+    margin-right: 10.6px;
+    margin-left: 10.6px; 
+    float: left;
+}
+
+.seat_num2_s{
+    margin-right: 6.2px;
+    margin-left: 6.2px; 
+    float: left;
+}
+
+.seat_eng_s{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    text-align: center;       
+}
+
+.non-reserved_seat{
+    background-color: #F2F2F2;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+}
+
+.my_seat{
+    background-color: #8694EC;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.reserved_seat{
+    width: 27px; 
+    height: 27px; 
+    margin: 5px; 
+    float: left;
+}

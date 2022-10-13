@@ -1,0 +1,176 @@
+
+*{
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'SangSangFlowerRoad';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/font/SangSangFlowerRoad.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MSugiJeong';
+    src: url('/assets/font/MSugiJeong.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+    
+  @font-face {
+    font-family: 'DX L';
+    src: url('/assets/font/DXMusicalL-KSCpc-EUC-H.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Modern';
+    src: url('/assets/font/Modern.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  body{
+    margin: 0;
+    overflow: hidden;
+  }
+  .nav_a{
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    float: left;
+    color: white;
+  }
+  a { text-decoration:none ;color: white; font-size: 20px; font-family: Microsoft YaHei UI;} 
+  .navbar{
+    background: linear-gradient(-45deg,#9cddff, #a0acf2,   #7b8bed );
+      background-size: 300% 300%;
+      animation: gradientBG 7s ease infinite;
+  
+  }
+  @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  .background{
+    transition: 5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .changebackground{
+  
+    background: #7ed8f7;
+  
+    border-radius: 0;
+  }
+  .zindex3{
+      z-index: 3;
+  }
+
+  .background-gradation{
+    background: linear-gradient(-45deg,#a1aeff, #adb9ff, #23a6d5);
+	background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+
+  }
+  @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background-gradation2{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradientBG2 15s ease infinite;
+
+  }
+  @keyframes gradientBG2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  .wave {
+  
+    opacity: .4;
+    position: absolute;
+    top: 350px;
+    left: 800px;
+  
+    background: #7ed8f7;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+            transform-origin: 50% 48%;
+    border-radius: 43%;
+  
+  animation-fill-mode: forwards;
+  
+  }
+  .-one{
+    animation: drift 3000ms  linear;
+    animation-fill-mode: forwards;
+  }
+  .-three {
+  animation-fill-mode: forwards;
+            animation: drift 5000ms  linear;
+  }
+  
+  .-two {
+  animation-fill-mode: forwards;
+            animation: drift 7000ms linear;
+    opacity: .1;
+    border: 3px solid #7ed8f7;
+  }
+  
+  
+  
+  @keyframes drift {
+    from {
+  
+              transform: rotate(0deg) scale(0,0);
+              opacity: 1;
+    }
+    to {
+  
+              transform: rotate(360deg) scale(2,2);
+              opacity: 0;
+    }
+  }
+  
+  .check{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:48%;
+    transition: 4s ease all;
+    opacity: 0;
+    font-size: 50px;
+    z-index: 5;
+    font-family: 'SangSangFlowerRoad';
+  }
+  
+  .checkup{
+    opacity: 1;
+  }
+  

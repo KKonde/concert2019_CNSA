@@ -1,0 +1,610 @@
+* {
+  box-sizing: border-box;
+  user-select:none;
+}
+
+body {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'SangSangFlowerRoad';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/font/SangSangFlowerRoad.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MSugiJeong';
+  src: url('/assets/font/MSugiJeong.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: 'DX L';
+  src: url('/assets/font/DXMusicalL-KSCpc-EUC-H.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Modern';
+  src: url('/assets/font/Modern.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+ 
+.all-wrapper {
+  margin: 0 auto;
+  height: 1080px;
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+.left-wrapper {
+  margin-left: 201px;
+  margin-top: 362px;
+  width: 738px;
+  height: 748px;
+  float: left;
+  position: relative;
+}
+
+.background {
+  width: 0px;
+  height: 0px;
+  left: 0;
+  top: 0;
+  border-top: 450px solid #F0F5FF;
+  border-left: 1200px solid #F0F5FF;
+  border-right: 1200px solid transparent;
+  border-bottom: 450px solid transparent;
+  position: absolute;
+  animation-name: color1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color1 {
+  0%{
+    border-top:450px solid #F0F5FF;
+    border-left:1200px solid #F0F5FF;
+  }
+  50%{
+    border-top:450px solid #d6e4ff;
+    border-left:1200px solid #d6e4ff;
+  }
+  100%{
+    border-top:450px solid #F0F5FF;
+    border-left:1200px solid #F0F5FF;
+  }
+}
+
+.background2 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 300px;
+  border-left: 780px solid #D2E6FF;
+  border-top: 300px solid transparent;
+  border-bottom: 300px solid transparent;
+  border-right: 780px solid transparent;
+  animation-name: color2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes color2 {
+  0%{
+  border-left: 795px solid #D2E6FF;
+  }
+  50%{
+
+    border-left: 795px solid #b3d5ff;
+  }
+  100%{
+    border-left: 795px solid #D2E6FF;
+  }
+}
+
+.background3 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 350px solid transparent;
+  border-top: 120px solid transparent;
+  border-bottom: 120px solid #F0F5FF;
+  border-right: 350px solid #F0F5FF;
+  animation-name: color3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color3 {
+  0%{
+    border-bottom: 120px solid #F0F5FF;
+    border-right: 350px solid #F0F5FF;
+  }
+  50%{
+    border-bottom: 120px solid #d6e4ff;
+    border-right: 350px solid #d6e4ff;
+  }
+  100%{
+    border-bottom: 120px solid #F0F5FF;
+    border-right: 350px solid #F0F5FF;
+  }
+}
+
+.backgroun4 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 350px solid transparent;
+  border-top: 120px solid transparent;
+  border-bottom: 120px solid #D2E6FF;
+  border-right: 350px solid transparent;
+  animation-name: color4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color4 {
+  0%{
+  border-bottom: 120px solid #D2E6FF;
+  }
+  50%{
+  border-bottom: 120px solid #b3d5ff;
+  }
+  100%{
+    border-bottom: 120px solid #D2E6FF;
+  }
+}
+
+
+.right-wrapper {
+  float: left;
+  margin-top: 162px;
+  margin-left: 100px;
+  width: 640px;
+  height: 600px;
+}
+
+.bg1 {
+  background-color: #8694EC;
+  border: 1px solid #8694EC;
+  width: 640px;
+  height: 200px;
+  position: relative;
+
+  }
+
+.bg2 {
+  background-color: #8694EC;
+  border: 1px solid #8694EC;
+  width: 640px;
+  height: 300px;
+  position: relative;
+}
+
+.bg3 {
+  background-color: #6D73BC;
+  border: 1px solid #6D73BC;
+  width: 640px;
+  height: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+div {
+  -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+
+
+
+#card{
+  width: 580px;
+  height: 580px;
+  top: -50px;
+  margin-left: 30px;
+  position: relative;
+  perspective: 30rem;
+  transition: all ease 1s;
+}
+
+#front{
+  background-color: white;
+  position: absolute;
+  width: 100%; height: 100%;
+  transition: transform 1s;
+  backface-visibility:hidden;
+}
+
+#back{
+  background-color: white;
+  position: absolute;
+  width: 100%; height: 100%;
+  transition: transform 1s;
+  backface-visibility:hidden;
+  transform: rotateY(180deg);
+}
+
+
+
+
+.title {
+  font-family: 'SangSangFlowerRoad';
+  font-size: 60px;
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+.title2 {
+  position: relative;
+  top: 10px;
+  width: 270px;
+  margin-left: 150px;
+  border-bottom: 40px solid rgba(0, 111, 255, 0.1);
+}
+
+.circle {
+  background-color: white;
+  border: 1px solid white;
+  width: 143px;
+  height: 44px;
+  border-radius: 30px;
+  margin-left: 250px;
+  margin-top: 55px;
+}
+
+#open {
+  border:none;
+  width: 220px;
+  height: 80px;
+  color: white;
+  margin-top: 40px;
+  font-size: 90px;
+  margin-left: 210px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'DX L';
+  transition: all ease 1s;
+  cursor: default;
+  border-radius: 50px;
+}
+
+#open:hover{
+  background-color:white;
+  color: #8694EC;
+  
+}
+
+.cute {
+  animation-name: cute1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+
+.cute1 {
+  animation-name: cute2;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+
+@keyframes cute1 {
+  to {
+    margin-top: -50px;
+  }
+}
+
+@keyframes cute2 {
+  from {
+    margin-top: -50px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+
+.up{
+  margin-top:-50px;
+}
+
+
+@keyframes appear {
+  to {
+    top: -300px;
+    z-index: 2;
+  }
+}
+
+@keyframes appear3 {
+  0% {
+    top: -300px;
+    z-index: 2
+  }
+
+  to {
+    top: -50px;
+    z-index: 2;
+  }
+}
+
+@keyframes appear2 {
+  to {
+    opacity: 1;
+  }
+}
+
+td {
+  border: 1px solid #C37272;
+}
+
+tr {
+  border: 1px solid #C37272;
+}
+
+#table {
+  margin-top: 50px;
+  margin-left: 160px;
+  width: 260px;
+  height: 70px;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 35px;
+  color: #585858;
+  font-family: 'SangSangFlowerRoad';
+  opacity: 0;
+}
+
+.on {
+  animation-fill-mode: forwards;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.on3 {
+  animation-name: appear3;
+  animation-duration: 1.5s;
+}
+
+.on2 {
+  animation-fill-mode: forwards;
+  animation-name: appear2;
+  animation-duration: 1.2s;
+}
+
+#textbox1 {
+  width: 333px;
+  height: 44px;
+  margin-left: 120px;
+  margin-top: 30px;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}
+
+#textbox2 {
+  width: 333px;
+  height: 44px;
+  margin-left: 120px;
+  margin-top: 10px;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}
+
+#password-textbox1 {
+  width: 333px;
+  height: 44px;
+  margin-left: 120px;
+  margin-top: 40px;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}
+
+#logo{
+  opacity: 0;
+}#logo2{
+  opacity: 0;
+}
+#show{
+  position: absolute;
+  margin-top: -29px;
+  margin-right: 10px;
+  right: 128px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #525050;
+  opacity: 0;
+  transition: .3s;
+}
+#show2{
+  
+  position: absolute;
+  margin-top: -29px;
+  margin-right: 10px;
+  right: 128px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #525050;
+  opacity: 0;
+  transition: .3s;
+}
+
+#password-textbox2 {
+  width: 333px;
+  height: 44px;
+  margin-left: 120px;
+  margin-top: 60px;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}#password-textbox3 {
+  width: 333px;
+  height: 44px;
+  margin-left: 120px;
+  margin-top: 10px;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}
+
+#login-button {
+  padding-top: 10px;
+  width: 291px;
+  height: 75px;
+  background: linear-gradient(to right, rgba(255, 213, 0, 0.1) 50%, rgba(255, 213, 0, 0.2) 50%);
+  background-size: 200%;
+  opacity: 0;
+  text-align: center;
+  font-family: 'SangSangFlowerRoad';
+  font-size: 40px;
+  color: #707070;
+  margin-left: 145px;
+  margin-top: 40px;
+  transition: 1s;
+  border:none;
+}
+
+#login-button:hover{
+  background-position: -100% 0;
+}
+
+#change-button{
+  padding-top: 10px;
+  width: 291px;
+  height: 75px;
+  background:linear-gradient(to right,rgba(255, 213, 0, 0.1) 50%, rgba(255, 213, 0, 0.2) 50% );
+  background-size: 200%;
+  opacity: 0;
+  text-align: center;
+  font-family: 'SangSangFlowerRoad';
+  font-size: 40px;
+  color: #707070;
+  margin-left: 145px;
+  margin-top: 40px;
+  transition: 1s;
+  border:none;
+}
+
+#change-button:hover{
+  background-position: -100% 0;
+}
+
+#warning{
+  opacity: 0;
+  transition: all ease 0.3s;
+  position: absolute;
+  margin-left: 120px;
+  color:red;
+  margin-bottom: 20px;
+}
+
+.vibration{
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  opacity: 1;
+}
+
+@keyframes shake {
+	0%{
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10%{
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	20%{
+		transform: translate(-2px, 1px) rotate(-1deg);
+	}
+	30%{
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	40%{
+		transform: translate(-1px, 1px) rotate(1deg);
+	}
+	50%{
+		transform: translate(1px, -1px) rotate(-2deg);
+	}
+	60%{
+		transform: translate(2px, 1px) rotate(1deg);
+	}
+	70%{
+		transform: translate(-1px, 2px) rotate(2deg);
+	}
+	80%{
+		transform: translate(2px, -1px) rotate(1deg);
+	}
+	90%{
+		transform: translate(-1px, 2px) rotate(0deg);
+	}
+	100%{
+		transform: translate(2px, 1px) rotate(-1deg);
+	}
+}
+
+#p{
+  font-size:16px;
+  margin-top: 30px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+
+}
+
+.on2:nth-child(3) {
+  animation-delay: 0.3s;
+}.on2:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.on2:nth-child(5) {
+  animation-delay: 0.9s;
+}.on2:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.testtest{
+  animation-delay: 1.2s;
+}
+.button1{
+  animation-delay: 0.3s;
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+}
+
+.button2{
+  animation-delay: 0.6s;
+  animation-name: appear2;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+}
+
+.on2:nth-child(8) {
+  animation-delay: 0.9s;
+}.on2:nth-child(9) {
+  animation-delay: 1.2s;
+}
+#warning{
+  opacity: 0;
+  transition: all ease 0.3s;
+  position: absolute;
+  margin-left: 120px;
+  margin-top:2px;
+  color:red;
+  margin-bottom: 20px;
+}

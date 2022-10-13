@@ -1,0 +1,184 @@
+body{
+  margin:0;
+
+}
+*{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'SangSangFlowerRoad';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/font/SangSangFlowerRoad.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MSugiJeong';
+  src: url('/assets/font/MSugiJeong.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: 'DX L';
+  src: url('/assets/font/DXMusicalL-KSCpc-EUC-H.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Modern';
+  src: url('/assets/font/Modern.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+ a { text-decoration:none ;color: white; font-size: 20px; font-family: Microsoft YaHei UI;}
+ .nav_a{
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    float: left;
+    color: white;
+}
+.navbar{
+  background: linear-gradient(-45deg,#9cddff, #a0acf2, #7b8bed);
+    background-size: 300% 300%;
+    animation: gradientBG 7s ease infinite;
+
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.wrapper{
+  width:1920px;
+  height:900px;
+  position: relative;
+  font-family: 'Modern';
+}
+img{
+  width:100%;
+  height: 100%;
+  transition:all  .5s
+}
+.image-card{
+  transition: all .5s;
+
+}
+
+.image-card:hover > img{
+  transform: scale(1.1);
+
+}
+
+
+.wrapper div:nth-child(1){
+  display: block;
+  float: left;
+  overflow: hidden;
+  width:400px;
+  height: 348px;
+  margin-top: -27px;
+
+  }
+.wrapper div:nth-child(2){
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-top: -27px;
+  width:560px;
+  height: 348px;
+
+}
+.wrapper div:nth-child(3){
+  display: block;
+  float: left;
+  overflow: hidden;
+  width:960px;
+  height: 640px;
+  margin-top: -27px;
+}
+.wrapper div:nth-child(4){
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 960px;
+  height: 530px;
+  margin-top: -297px;
+
+}
+.wrapper div:nth-child(5){
+  display: block;
+  float: left;
+  overflow: hidden;
+  width:480px;
+  height: 260px;
+  margin-top: -27px;
+}
+.wrapper div:nth-child(6){
+  display: block;
+  float: left;
+  overflow: hidden;
+    width:480px;
+    height: 260px;
+    margin-top: -27px;
+}
+.sidebar{
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  right: 0;
+  width: 644px;
+  height: 872px;
+}
+.sidebar2{
+  border-bottom:1px solid white;
+  width:495px;
+  position: absolute;
+  right: 50px;
+  top:420px;
+  color:white;
+  font-size: 88px;
+  text-align: right;
+  padding-right: 20px;
+}
+.sidebar3{
+  color:white;
+  font-size: 36px;
+  position: absolute;
+  top:620px;
+  right:70px;
+}
+
+.explain-container{
+  width:1920px;
+  height: 650px;
+  margin-top: -25px;
+}
+
+
+.mainimg{
+  width: 683px;
+  height: 455px;
+ 
+  margin-top: 97px;}
+  .o{
+  margin-left: 150px;
+  float:left;
+}
+.t{
+  margin-right: 150px;
+  float:right;
+}
+
+.intext{
+  font-family: 'SangSangFlowerRoad';
+  width:600px;
+  height: 455px;
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+[[define "about_us"]]
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="/assets/css/aboutUS.css">
+    <script type="text/javascript">
+      window.onload = function() {
+        setTimeout(function(){
+          document.getElementById('back').style.transform = "rotateY(180deg)";
+          document.getElementById('front').style.transform = "";
+        },4000);
+  
+        setInterval(function(){
+          a = document.getElementById('front').style.transform;
+          b = document.getElementById('back').style.transform;
+          if(b == "rotateY(180deg)"){
+            document.getElementById('front').style.transform = "rotateY(180deg)";
+            document.getElementById('back').style.transform = "rotateY(360deg)";
+          }
+          else {
+            document.getElementById('back').style.transform = "rotateY(180deg)";
+            document.getElementById('front').style.transform = "";
+          }
+        },5000);
+  
+      }
+      </script>
+  </head>
+  <body>
+    <div class="navbar" style=" width: 1920px; height: 80px; background-color: #8694EC;margin-bottom:0px;position:relative;">
+      <a href="/"><div style="width: 50px; height: 50px; background-image:url(/assets/img/CNSA_logo.png); margin-left: 20px; margin-right: 40px;  margin-top: 13px; float: left;"></div></a>
+      <div class="nav_a"><a href="/changePassword">비밀번호 변경</a></div>
+      <div class="nav_a"><a href="/reserve">예약</a></div>
+      <div class="nav_a"><a href="/checkReserve">예약확인</a></div>
+      <div class="nav_a" style="margin-right: 860px"><a href="/aboutUs">About us</a></div>
+      <div class="nav_a"><a href="/" style="color: #FFF2AE">HOME</a></div>
+      <div class="nav_a"><a href="/logout">로그아웃</a></div>
+  </div>
+  <div style="width:1920px; margin:0 auto;height:1000px;overflow:hidden;position: relative;top:-25px;">
+    <div class="background1"></div>
+    <div class="background2"></div>
+    <div class="background3"></div>
+  <div style="position:absolute">
+          <div id="card">
+      <div id=front>
+        
+        <hr class="hr1">
+        <div class="abtitle">ABOUT US</div>
+        <hr class="hr2">
+        <div class="introduce"><div>Designer</div><div>5기 정지우</div></div>
+        <div class="introduce2"><div>Back-end Developer</div><div>5기 김산</div></div>
+        <div class="introduce3"><div>Front-end Developer</div><div>5기 김지은</div></div>
+        <div class="introduce4"><div>5기 서정민</div></div>
+        <div class="introduce5"><div>Animation</div><div>5기 서정민</div></div>
+        <hr class="hr3">
+      </div>
+
+      <div id="back">
+          
+        <div class="text">
+          큰사 콘서트 2019
+        </div>
+        <div class="thankyou">
+            2019 CNSA CONCERT를 빛나게 해주신<br> 교장&middot;교감선생님,<br>
+            김민희 선생님 외 모든 선생님들께<br> 감사의 말씀을 드립니다.
+            <br><br>
+            - 2019 CNCON WEB DEVELPOERS 올림 - 
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>
+[[end]]

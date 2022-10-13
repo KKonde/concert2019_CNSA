@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'SangSangFlowerRoad';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/font/SangSangFlowerRoad.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MSugiJeong';
+  src: url('/assets/font/MSugiJeong.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DX L';
+  src: url('/assets/font/DXMusicalL-KSCpc-EUC-H.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Modern';
+  src: url('/assets/font/Modern.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+.nav_a{
+  height: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 25px;
+  float: left;
+  color: white;
+}
+a { text-decoration:none ;color: white; font-size: 20px; font-family: Microsoft YaHei UI;} 
+.navbar{
+  background: linear-gradient(-45deg,#9cddff, #a0acf2, #7b8bed);
+    background-size: 300% 300%;
+    animation: gradientBG 7s ease infinite;
+
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.background1 {
+  width: 0px;
+  height: 0px;
+  left: 0;
+  top: 0;
+  border-top: 650px solid #F0F5FF;
+  border-left: 1300px solid #F0F5FF;
+  border-right: 1300px solid transparent;
+  border-bottom: 650px solid transparent;
+  position: absolute;
+  animation-name: color1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes color1 {
+  0%{
+    border-top:650px solid #F0F5FF;
+    border-left:1300px solid #F0F5FF;
+  }
+  50%{
+    border-top:650px solid #d6e4ff;
+    border-left:1300px solid #d6e4ff;
+  }
+  100%{
+    border-top:650px solid #F0F5FF;
+    border-left:1300px solid #F0F5FF;
+  }
+}
+
+.background2 {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 300px;
+
+  border-top: 350px solid transparent;
+  border-bottom: 350px solid #D2E6FF;
+  border-right: 1100px solid transparent;
+  border-left: 1100px solid #D2E6FF;
+  animation-name: color2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes color2 {
+  0%{
+  border-left: 1100px solid #D2E6FF;
+  border-bottom: 350px solid #D2E6FF;
+  }
+  50%{
+    border-left: 1100px solid #b3d5ff;
+    border-bottom: 350px solid #b3d5ff;
+  }
+  100%{
+    border-left: 1100px solid #D2E6FF;
+    border-bottom: 350px solid #D2E6FF;
+  }
+}
+
+.background3{
+  width:0px;
+  height:0px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top:100px solid transparent;
+  border-bottom:100px solid #D9DFFF;
+  border-left:250px solid transparent;
+  border-right:250px solid #D9DFFF;
+}
+
+body{
+  margin:0;
+  overflow: hidden;
+}
+.PWcard{
+  margin-left: 679px;
+  margin-top:170px;
+  width: 562px;
+  height: 562px;
+  background-color: white;
+  text-align: center;
+  border:1px solid black;
+  
+ 
+}
+.pw-title{
+  font-family: 'SangSangFlowerRoad';
+  width: 243px;
+  color:#0034AE;
+  font-size: 40px;
+  margin-left: 160px;
+  margin-top:48px;
+}
+
+
+#show{
+  position: absolute;
+  margin-top: -29px;
+  margin-right: 10px;
+  right: 110px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #525050;
+ 
+  transition: .3s;
+}
+#show2{
+  position: absolute;
+  margin-top: -29px;
+  margin-right: 10px;
+  right: 110px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #525050;
+ 
+  transition: .3s;
+}
+#show3{
+  position: absolute;
+  margin-top: -29px;
+  margin-right: 10px;
+  right: 110px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #525050;
+ 
+  transition: .3s;
+}
+#password-textbox1 {
+  width: 333px;
+  height: 44px;
+  
+  margin-top: 10px;
+ 
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}
+#password-textbox2 {
+  width: 333px;
+  height: 44px;
+  
+  margin-top: 10px;
+ 
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}#password-textbox3 {
+  width: 333px;
+  height: 44px;
+
+  margin-top: 10px;
+ 
+  font-size: 20px;
+  font-family: 'MSugiJeong';
+}  
+
+#change-button{
+  padding-top: 10px;
+  width: 291px;
+  height: 75px;
+  background:linear-gradient(to right,rgba(255, 213, 0, 0.1) 50%, rgba(255, 213, 0, 0.2) 50% );
+  background-size: 200%;
+  
+  text-align: center;
+  font-family: 'SangSangFlowerRoad';
+  font-size: 40px;
+  color: #707070;
+ 
+  margin-top: 40px;
+  transition: 1s;
+  border:none;
+}
+
+#change-button:hover{
+  background-position: -100% 0;
+}
+
+#warning{
+  opacity: 0;
+  transition: all ease 0.3s;
+  position: absolute;
+  margin-left: 120px;
+  color:red;
+  margin-bottom: 20px;
+}
+
+.vibration{
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  opacity: 1;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10%{
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    20%{
+        transform: translate(-2px, 1px) rotate(-1deg);
+    }
+    30%{
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    40%{
+        transform: translate(-1px, 1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(1px, -1px) rotate(-2deg);
+    }
+    60%{
+        transform: translate(2px, 1px) rotate(1deg);
+    }
+    70%{
+        transform: translate(-1px, 2px) rotate(2deg);
+    }
+    80%{
+        transform: translate(2px, -1px) rotate(1deg);
+    }
+    90%{
+        transform: translate(-1px, 2px) rotate(0deg);
+    }
+    100%{
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+}
+
+#p{
+  font-size:16px;
+  margin-top: 30px;
+  width: 100%;
+  
+  text-align: center;
+
+}

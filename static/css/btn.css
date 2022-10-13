@@ -1,0 +1,93 @@
+.btn {
+    background-color: #F2F2F2;
+    width: 30px;
+    height: 30px;
+    margin: 3.5px;
+    border: none;
+    border-radius: 9px;
+  }
+  .btn:hover {
+    background-color: #8694EC;
+    width: 30px;
+    height: 30px;
+    margin: 3.5px;
+    border: none;
+    border-radius: 9px;
+  }
+  .btn:focus {
+    background-color: #8694EC;
+    width: 30px; 
+    height: 30px;
+    margin: 3.5px;
+    border: none;
+    border-radius: 9px;
+  }
+  .btn:disabled {
+    background: url('/assets/img/seat_x.png');
+    background-color: white;
+    background-size: cover;
+    cursor: not-allowed;
+  }
+ 
+  .btn_s {
+    background-color: #F2F2F2;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-size: cover;
+    cursor: not-allowed;
+  }
+
+  
+  .btn_s:disabled {
+    background: url('/assets/img/seat_x.png');;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-size: cover;
+    cursor: not-allowed;
+  }
+
+  .btn_m {
+    background-color: #8694EC;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-size: cover;
+    cursor: not-allowed;
+  }
+  .btn_m:disabled {
+    background-color: #8694EC;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-size: cover;
+    cursor: not-allowed;
+  }
+
+  .soldout {
+  background-color: white;
+  background-size: cover;
+  cursor: not-allowed;
+}
+  
+  .soldout:hover {
+    cursor: default !important;
+  }
+
+  .btn_reserve{
+    width: 420px; 
+    height: 150px; 
+    background-color: #FFFFFF;  
+    border-radius: 20px; 
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+  }

@@ -1,0 +1,138 @@
+[[define "login"]]
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>CNSA CONCERT</title>
+  <link rel="stylesheet" href="assets/css/login.css?ver=1">
+  <script src="assets/js/login.js?ver=1">
+
+
+  </script>
+
+  
+</head>
+
+<body>
+  <!-- 모바일 = 팅김-->
+	<script>
+      var filter = "win16|win32|win64|mac|macintel";
+      if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+          alert('다산관 PC로 접속해주세요.');
+          history.back();
+        }
+      }
+    </script>
+  <form method="POST">
+  <div class="all-wrapper">
+    <div class="background">
+
+    </div>
+    <div class="background2">
+
+    </div>
+    <div class="background3">
+
+    </div>
+    <div class="backgroun4">
+
+    </div>
+
+
+      <div class="left-wrapper">
+        <div style="font-size:60px;text-align:center;color:black;font-family:'SangSangFlowerRoad';">
+          봄, 여름, 가을, 그리고 겨울<br>CNSA와 함께
+        </div>
+        <div style="margin-top:40px;font-size:40px;text-align:center;font-family:'DX L';">
+          2019 6th CNSA CONCERT-Four Seasons
+        </div>
+       
+
+      </div>
+      <div class="right-wrapper">
+      <div class="bg1">
+        <div id="card">
+
+
+        <div id="front">
+          <div class="title">
+            <span style="color:#0034AE;">큰사</span> 콘서트
+          </div>
+          <div class="title2">
+
+          </div>
+          <table id="table">
+            <tr>
+              <td colspan="4" style="height:13px;"></td>
+            </tr>
+              <td>들</td>
+              <td>어</td>
+              <td>가</td>
+              <td>기</td>
+            <tr>
+
+            </tr>
+          </table>
+          
+          <input type="text" id="textbox1" placeholder="학번" method="post" name="studentNumber"></input>
+          <input type="password" id="textbox2" placeholder="비밀번호" method="post" name="password"></input>
+          <p id="warning"></p>
+
+          <button id="login-button" type="submit">
+            로그인
+          </button>
+        </div>
+        <div id="back">
+          <div class="title" id="logo">
+            <span style="color:#0034AE;">큰사</span> 콘서트
+          </div>
+          <div class="title2" id="logo2">
+
+          </div>
+          <input type="text" id="password-textbox1" placeholder="기존 비밀번호" method="post" ></input>
+          <input type="password" id="password-textbox2" placeholder="새 비밀번호" method="post"></input>
+        <div id="change-button">
+            변경하기
+        </div>
+
+        <p id="p">※ 계정 도용 방지를 위해 반드시 비밀번호를 변경해주세요.<br>
+초기 비밀번호는 학번입니다.<br>
+비밀번호 미변경으로 인한 계정 도용 사례의 책임은 본인에게 <br>
+있으니 절대 다른 사람에게 계정을 알려주지 마십시오.
+</p>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      </div>
+
+      <div class="bg2">
+        <div class="circle">
+
+        </div>
+        <div id="open" >
+          open
+        </div>
+      </div>
+      <div class="bg3">
+
+      </div>
+
+
+</div>
+</div>
+</form>
+
+</body>
+
+
+</html>
+
+[[end]]

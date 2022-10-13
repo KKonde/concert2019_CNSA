@@ -1,0 +1,255 @@
+.nav_a{
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    float: left;
+    color: white;
+}
+body{
+    margin:0;
+}
+@font-face {
+    font-family: 'SangSangFlowerRoad';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/font/SangSangFlowerRoad.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MSugiJeong';
+    src: url('/assets/font/MSugiJeong.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+    
+  @font-face {
+    font-family: 'DX L';
+    src: url('/assets/font/DXMusicalL-KSCpc-EUC-H.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Modern';
+    src: url('/assets/font/Modern.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face { 
+    font-family: 'NanumBarunpen';
+    src: url('/assets/font/NanumBarunpenR.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {     
+    font-family: 'NanumBarunpen';
+    src: url('/assets/font/NanumBarunpenR.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Stencil';
+    src: url('/assets/font/Stencil.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Microsoft YaHei UI';
+    src: url('/assets/font/Microsoft YaHei UI.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;  
+}
+
+@font-face { 
+    font-family: 'HYHeadLine';
+    src: url('/assets/font/HYHeadLine.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;  
+    
+}
+
+
+.navbar{
+    background: linear-gradient(-45deg,#9cddff, #a0acf2, #7b8bed);
+      background-size: 300% 300%;
+      animation: gradientBG 7s ease infinite;
+  
+  }
+  @keyframes gradientBG {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.CNSA{
+    font-size: 120px; 
+    color: #0034AE;
+    margin-left: 90px;
+    margin-top: 50px;
+    float: left;
+    font-family: 'SangSangFlowerRoad';
+}
+
+.blue_box1{
+    width: 450px;
+    height: 250px;
+    background-color: #8694EC;
+    position: relative;
+}
+
+.box1{
+    width: 430px;
+    height: 250px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    position: absolute;
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+}
+
+.box1_text{
+    font-size: 35px;
+    color: #0034AE;
+    margin-bottom: 5px;
+    float: left;
+    font-family: 'SangSangFlowerRoad';
+}
+
+.blue_line{
+    width: 100px;
+    height: 3px;
+    background-color: #0034AE;
+    float: left;
+    margin-top: 20px;
+}
+
+.box2_tu{
+    width: 830px;
+    height: 880px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.blue_box2{
+    width: 770px;
+    height: 830px;
+    background-color: #8694EC;
+    position: relative;
+}
+
+.box2{
+    width: 770px;
+    height: 830px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    position: absolute;
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+}
+
+.box2_text{
+    font-size: 30px;
+    color: #0034AE;
+    font-weight: bold;
+    font-family: Microsoft YaHei UI;
+}
+
+.box3_tu{
+    width: 420x;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 110px;
+    float: left;
+}
+
+.box3{
+    width: 420px; 
+    height: 490px; 
+    background-color: #FFFFFF;  
+    border-radius: 20px; 
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+}
+
+.white_box{
+    background-color: #FFFFFF; 
+    width: 410px; 
+    height: 65px; 
+    border-radius: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+}
+
+.box4{
+    width: 420px; 
+    height: 150px; 
+    background-color: #FFFFFF;  
+    border-radius: 20px; 
+    box-shadow: 2px 2px 2px 2px #D6DAE0;
+}
+
+.box4_tu{
+    margin-left: -5px;
+    padding-top: 5px; 
+    text-align: center
+}
+
+.blue_pen{
+    height: 25px;
+    background-color: #006FFF;
+    opacity: 0.1;
+    position: relative;
+}
+
+.blue_pen_text{
+    height: 25px;
+    color: #0034AE;
+    position: relative;
+    margin-top: -24px;
+    font-family: 나눔바른펜;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.blue_pen_text_s{
+    color: #0034AE;
+    font-family: 나눔바른펜;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.black_pen_text_s{
+    color: #000000;
+    font-family: 나눔바른펜;
+    float: left;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.gray_pen_text_s{
+    color: #787878;
+    font-family: 나눔바른펜;
+    font-size: 15px;
+}
+
+.trans_bt{
+    font-family: Stencil;
+    color: #0034AE;
+    font-size: 40px;
+}
+
+.trans_gt{
+    font-family: Stencil;
+    color: #D5D5D5;
+    font-size: 20px;
+}
+
